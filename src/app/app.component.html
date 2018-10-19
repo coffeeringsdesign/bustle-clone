@@ -5,11 +5,4 @@
   </h1>
 
 <h2>Large Article Attempt: </h2>
-<!-- <app-large-article></app-large-article> -->
-<div *ngFor="let article of masterArticleList">
-  <img  src={{article.picture}} >
-    <div class="titleBox">
-      <h3 *ngFor="let article of masterArticleList">{{article.title}}</h3>
-      <h6>{{article.author}}</h6>
-  </div>
-</div>
+<app-large-article [childArticleList]="masterArticleList" ></app-large-article>
