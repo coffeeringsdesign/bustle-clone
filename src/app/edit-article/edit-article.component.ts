@@ -17,6 +17,6 @@ export class EditArticleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
-
 }

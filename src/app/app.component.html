@@ -4,14 +4,14 @@
     {{ title }}
   </h1>
 
-<h2>Edit Form Attempt </h2>
-<app-edit-article [childSelectedArticle]="selectedArticle" (clickedDone)="finishedEditing()"></app-edit-article>
 
 <h2>Large Article Attempt: </h2>
 <app-large-article [childArticleList]="masterArticleList" ></app-large-article>
+<h2>Edit Form Attempt </h2>
+<app-edit-article [childSelectedArticle]="selectedArticle" (clickedDone)="finishedEditing()" ></app-edit-article>
 
-<h2>Medium Article Attempt: </h2>
+<!-- <h2>Medium Article Attempt: </h2>
 <app-medium-article [childArticleList]="masterArticleList"></app-medium-article>
 
 <h2>Small Article Attempt: </h2>
-<app-small-article [childArticleList]="masterArticleList"></app-small-article>
+<app-small-article [childArticleList]="masterArticleList"></app-small-article> -->

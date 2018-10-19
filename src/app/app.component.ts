@@ -20,7 +20,7 @@ export class AppComponent {
     this.selectedArticle = null;
   }
 
-  editArticle() {
+  editArticle(clickedArticle) {
     this.selectedArticle = clickedArticle;
   }
 }
