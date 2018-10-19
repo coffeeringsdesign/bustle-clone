@@ -25,5 +25,8 @@ export class AppComponent {
     console.log(this.selectedArticle);
   }
 
+  addNewArticle(newArticle: Article) {
+    this.masterArticleList.push(newArticle);
+  }
 
 }
