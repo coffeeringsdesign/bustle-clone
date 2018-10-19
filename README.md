@@ -9,19 +9,22 @@ This project is to build a site clone of Bustle using Angular.
 ## Planning and Site layout
 
 Model:
-* Sponsored article: yes or no
+* Sponsored article: yes or no (medium articles only)
 * Title
 * Picture
 * Description
 * Author
+* Subject (used solely for search/sorting articles)
 
-| Small Article | Medium Article | Headline Article |
+| Small Article Component | Medium Article Component | Headline Article Component|
 |---------------|---------------|---------------|
 | Picture | Sponsored y/n | Picture |
 | Title | Picture | Title |
 | Author | Title | Author |
 |--------| Description |---------|
 |--------| Author |---------|
+
+Slideshow Component: places the small article components into a slideshow.
 
 ## User Needs
 
