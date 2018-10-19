@@ -1,6 +1,7 @@
-<div class="LargeArticle">
-  <img src={{}} alt="Janelle Monae">
-  <div class="titleBox">
-
+<div *ngFor="let thisArticle of childArticleList">
+  <img  src={{thisArticle.picture}} >
+    <div class="titleBox">
+      <h3 *ngFor="let thisArticle of childArticleList">{{thisArticle.title}}</h3>
+      <h6>{{thisArticle.author}}</h6>
   </div>
 </div>

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { Article } from './models/article.model';
+
 
 @Component({
   selector: 'app-large-article',
@@ -7,6 +8,7 @@ import { Article } from './models/article.model';
   styleUrls: ['./large-article.component.css']
 })
 export class LargeArticleComponent implements OnInit {
+  @Input() childArticleList: Article[];
 
   constructor() { }
 
