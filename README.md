@@ -8,7 +8,8 @@ This project is to build a site clone of Bustle using Angular.
 
 ## Planning and Site layout
 
-#####Model:
+##### Model:
+
 * Sponsored article: yes or no (medium articles only)
 * Title
 * Picture
@@ -17,7 +18,8 @@ This project is to build a site clone of Bustle using Angular.
 * Subject (used solely for search/sorting articles)
 * Date Added (used only for viewing the full article)
 
-#####Components:
+##### Components:
+
 | Small Article Component | Medium Article Component | Headline Article Component|
 |---------------|---------------|---------------|
 | Picture | Sponsored y/n | Picture |
