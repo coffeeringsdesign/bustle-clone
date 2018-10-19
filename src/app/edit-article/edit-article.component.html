@@ -1,14 +1,13 @@
-<form  *ngIf="childSelectedArticle" >
-
+<form *ngIf="childSelectedArticle"  >
   <label><input type="checkbox" name="sponsored" value="1">sponsored?</label><br>
 
-  <input [(ngModel)]="childSelectedArticle.title" type="text" name="articleTitle" placeholder="Title"><br>
+  <input [(ngModel)]="childSelectedArticle.title" type="text" name="articleTitle" ><br>
 
-  <input [(ngModel)]="childSelectedArticle.author" type="text" name="author" placeholder="Author"><br>
+  <input [(ngModel)]="childSelectedArticle.author" type="text" name="author"><br>
 
-  <textarea [(ngModel)]="childSelectedArticle.description" type="text" name="articleDescription" placeholder="Description"></textarea><br>
+  <textarea [(ngModel)]="childSelectedArticle.description" type="text" name="articleDescription"></textarea><br>
 
-  <textarea [(ngModel)]="childSelectedArticle.body" type="text" name="articleBody" placeholder="Article Body"></textarea><br>
+  <textarea [(ngModel)]="childSelectedArticle.body" type="text" name="articleBody"></textarea><br>
 
   <input [(ngModel)]="childSelectedArticle.picture" type="file" name="Picture"><br>
 
@@ -33,5 +32,5 @@
 
   <input [(ngModel)]="childSelectedArticle.subject" type="checkbox" name="Video" value="Video"> Video<br>
 
-  <button (click)="finishedEditing()">"Submit Article"</button>
+  <button (click)="finishedEditing()">"Submit Edits"</button>
 </form>

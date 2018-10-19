@@ -1,3 +1,37 @@
-<p>
-  add-article works!
-</p>
+<form #addNewArticle>
+  <h4>Add an Article:</h4>
+  <label><input #newSponsored type="checkbox" value="1">sponsored?</label><br>
+
+  Title:<input #newTitle><br>
+
+  Author:<input #newAuthor><br>
+
+  Description:<textarea #newDescription></textarea><br>
+
+  Article Body:<textarea #newBody></textarea><br>
+
+  Picture<input #newPicture><br>
+
+  <h4>Subjects:</h4>
+  <input #newSubject value="News" type="checkbox">News<br>
+
+  <input #newSubject value="Entertainment" type="checkbox"> Entertainment<br>
+
+  <input #newSubject value="Beauty" type="checkbox"> Beauty<br>
+
+  <input #newSubject value="Fashion" type="checkbox"> Fashion<br>
+
+  <input #newSubject value="Lifestyle" type="checkbox">Lifestyle<br>
+
+  <input #newSubject value="Books" type="checkbox"> Books<br>
+
+  <input #newSubject value="Tech" type="checkbox"> Tech<br>
+
+  <input #newSubject value="Food" type="checkbox"> Food<br>
+
+  <input #newSubject value="Features" type="checkbox"> Features<br>
+
+  <input #newSubject value="Video" type="checkbox"> Video<br>
+
+  <button (click)="submitForm(newSponsored.value, newPicture.value, newTitle.value, newDescription.value, newAuthor.value, newBody.value, newSubject.value); addNewArticle.reset()">"Submit Article"</button>
+</form>
