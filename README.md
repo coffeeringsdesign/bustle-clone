@@ -1,27 +1,57 @@
-# BustleClone
+# Bustle Site Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+#### By Kendra Kelly
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project is to build a site clone of Bustle using Angular.
 
-## Code scaffolding
+## Specs
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Behavior | input | output |
+|----------|-------|--------|
+| Behavior | input | output |
 
-## Build
+## Setup/Installation Requirements
+Using Command Line:
+1. ``git clone https://github.com/coffeeringsdesign/bustle-clone.git `` to clone the site.
+2. ``cd ~`` to navigate to base directory
+3. ``cd Desktop `` to navigate to your desktop
+4. ``cd bustle-clone`` to enter the site folder
+5. ``npm install`` to install all webpack dependencies
+7. ``npm run start`` this will webpack and immediate pop open the site on your brower. I recommend Chrome.
+8. `ng serve --open` for a dev server. This will automatically open your project in your default browser. The app will automatically reload if you change any of the source files. The URL is `http://localhost:4200/` if you should need it.
+9. `ng generate component component-name` to generate a new component.
+10. `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+11. `ng test` to execute the unit tests with Karma.
+12. I recommend Atom to edit any html, javascript, or sass.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Contribution Requirements
 
-## Running unit tests
+1. Clone the repo
+1. Make a new branch
+1. Commit and push your changes
+1. Create a PR
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies Used
 
-## Running end-to-end tests
+* Angular & Angular-CLI
+* JavaScript
+* Node.js
+* jQuery 3.3.1
+* Bootstrap 4.1.3
+* Babel
+* Webpack
+* ESLint
+* Jasmine
+* Karma
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Suuport & Contact Details
 
-## Further help
+Please feel free to get in touch. Reach out to me at kendra@coffeeringsdesign.com.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License
+
+This software is licensed under the MIT license.
+
+Copyright (c) 2018 **Kendra Kelly**
