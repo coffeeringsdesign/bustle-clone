@@ -12,6 +12,7 @@ export class LargeArticleComponent implements OnInit {
   @Output() editClickSender = new EventEmitter();
 
   editButtonClicked(articleToEdit: Article) {
+    //this is receiveing the artcle chosen to be edited
     this.editClickSender.emit(articleToEdit);
   }
 

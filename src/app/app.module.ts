@@ -8,6 +8,7 @@ import { LargeArticleComponent } from './large-article/large-article.component';
 import { MediumArticleComponent } from './medium-article/medium-article.component';
 import { SmallArticleComponent } from './small-article/small-article.component';
 import { EditArticleComponent } from './edit-article/edit-article.component';
+import { AddArticleComponent } from './add-article/add-article.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { EditArticleComponent } from './edit-article/edit-article.component';
     LargeArticleComponent,
     MediumArticleComponent,
     SmallArticleComponent,
-    EditArticleComponent
+    EditArticleComponent,
+    AddArticleComponent
   ],
   imports: [
     BrowserModule,
