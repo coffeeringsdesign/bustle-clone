@@ -6,11 +6,31 @@
 
 This project is to build a site clone of Bustle using Angular.
 
-## Specs
+## Planning and Site layout
 
-| Behavior | input | output |
-|----------|-------|--------|
-| Behavior | input | output |
+Model:
+* Sponsored article: yes or no
+* Title
+* Picture
+* Description
+* Author
+
+| Small Article | Medium Article | Headline Article |
+|---------------|---------------|---------------|
+| Picture | Sponsored y/n | Picture |
+| Title | Picture | Title |
+| Author | Title | Author |
+|--------| Description |---------|
+|--------| Author |---------|
+
+## User Needs
+
+* A Visitor wants to be able to browse and read articles.
+* A Visitor wants to be able use the menu to filter through article subjects.
+* Admin wants to be able to fill out a form to add a new article.
+* Admin wants to be able to edit an added article via another form.
+* Admin wants to be able to remove an article from the site.
+
 
 ## Setup/Installation Requirements
 Using Command Line:
