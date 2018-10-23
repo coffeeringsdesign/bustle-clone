@@ -20,7 +20,7 @@ export class AppComponent {
   }
 
   addNewArticle(newArticle: Article) {
-    this.masterArticleList.push(newArticle);
+    // this.masterArticleList.push(newArticle);
   }
 
 }
