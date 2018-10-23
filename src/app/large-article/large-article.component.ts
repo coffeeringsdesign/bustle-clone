@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Article } from '../models/article.model';
 
 
@@ -7,18 +7,12 @@ import { Article } from '../models/article.model';
   templateUrl: './large-article.component.html',
   styleUrls: ['./large-article.component.css']
 })
-export class LargeArticleComponent implements OnInit {
+export class LargeArticleComponent {
   @Input() childArticleList: Article[];
-  @Output() editClickSender = new EventEmitter();
+  @Output() clickSender = new EventEmitter();
 
   editButtonClicked(articleToEdit: Article) {
     //this is receiveing the artcle chosen to be edited
-    this.editClickSender.emit(articleToEdit);
+    this.clickSender.emit(articleToEdit);
   }
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }

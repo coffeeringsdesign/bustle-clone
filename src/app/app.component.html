@@ -6,7 +6,7 @@
 
 
 <h2>Large Article Attempt: </h2>
-<app-large-article [childArticleList]="masterArticleList" ></app-large-article>
+<app-large-article [childArticleList]="masterArticleList" (clickSender)="editArticle($event)"></app-large-article>
 <h2>Add Form Attempt</h2>
 <app-add-article (sendNewArticle)="addNewArticle($event)"></app-add-article>
 <h2>Edit Form Attempt </h2>

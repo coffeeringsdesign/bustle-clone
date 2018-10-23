@@ -1,8 +1,8 @@
-<div *ngFor="let currentArticle of childArticleList">
-  <img  src={{currentArticle.picture}} >
+<div *ngFor="let article of childArticleList">
+  <img  src={{article.picture}} >
   <div class="titleBox">
-    <h3>{{currentArticle.title}}</h3>
-    <h6>{{currentArticle.author}}</h6>
+    <h3>{{article.title}}</h3>
+    <h6>{{article.author}}</h6>
   </div>
-  <button (click)="editButtonClicked(currentArticle)" type="button" name="button">Edit</button>
+  <button (click)="editButtonClicked(article)" type="button" name="button">Edit</button>
 </div>

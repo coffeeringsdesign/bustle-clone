@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Article } from './../models/article.model';
 
 @Component({
@@ -6,17 +6,11 @@ import { Article } from './../models/article.model';
   templateUrl: './edit-article.component.html',
   styleUrls: ['./edit-article.component.css']
 })
-export class EditArticleComponent implements OnInit {
+export class EditArticleComponent{
   @Input() childSelectedArticle: Article;
   @Output() clickedDone = new EventEmitter();
 
   finishedEditing() {
     this.clickedDone.emit();
-  }
-
-  constructor() { }
-
-  ngOnInit() {
-    
   }
 }

@@ -22,7 +22,6 @@ export class AppComponent {
 
   editArticle(clickedArticle) {
     this.selectedArticle = clickedArticle;
-    console.log(this.selectedArticle);
   }
 
   addNewArticle(newArticle: Article) {
