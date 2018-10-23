@@ -45,13 +45,16 @@ Using Command Line:
 2. ``cd ~`` to navigate to base directory
 3. ``cd Desktop `` to navigate to your desktop
 4. ``cd bustle-clone`` to enter the site folder
-5. ``npm install`` to install all webpack dependencies
-7. ``npm run start`` this will webpack and immediate pop open the site on your brower. I recommend Chrome.
-8. `ng serve --open` for a dev server. This will automatically open your project in your default browser. The app will automatically reload if you change any of the source files. The URL is `http://localhost:4200/` if you should need it.
-9. `ng generate component component-name` to generate a new component.
-10. `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-11. `ng test` to execute the unit tests with Karma.
-12. I recommend Atom to edit any html, javascript, or sass.
+5.  You will need to get an API key from Firebase in order to access the database. You can sign up to get one here: https://firebase.google.com/
+6.  Place them in a file called api-keys.ts inside the src/app directory.
+7.  Place ``/src/app/api-keys.ts`` in the .gitignore file.
+8. ``npm install`` to install all webpack dependencies
+9. ``npm run start`` this will webpack and immediate pop open the site on your brower. I recommend Chrome.
+10. `ng serve --open` for a dev server. This will automatically open your project in your default browser. The app will automatically reload if you change any of the source files. The URL is `http://localhost:4200/` if you should need it.
+11. `ng generate component component-name` to generate a new component.
+12. `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+13. `ng test` to execute the unit tests with Karma.
+14. I recommend Atom to edit any html, javascript, or sass.
 
 ## Contribution Requirements
 

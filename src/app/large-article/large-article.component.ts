@@ -12,7 +12,6 @@ export class LargeArticleComponent {
   @Output() clickSender = new EventEmitter();
 
   editButtonClicked(articleToEdit: Article) {
-    //this is receiveing the artcle chosen to be edited
     this.clickSender.emit(articleToEdit);
   }
 }

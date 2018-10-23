@@ -1,0 +1,21 @@
+{ "articles": [{
+    "sponsored": "false",
+    "picture": "./assets/img/sarah-paulson1.jpg",
+    "title": "Everything Sarah Paulson Says Is Fascinating — Even When She's Talking About Nasal Spray",
+    "description": "Sarah Paulson is killing me. I’ve asked to read the text chain she has going with her Ocean’s 8 co-stars (weeks before it was reportedly deleted), and though she’s given me a firm “nope” because she doesn't 'want to get kicked off the chain, she’s…",
+    "author": "Patti Greco",
+    "body": "Sarah Paulson is killing me. I’ve asked to read the text chain she has going with her Ocean’s 8 co-stars (weeks before it was reportedly deleted), and though she’s given me a firm 'nope' because she doesn't 'want to get kicked off the chain,' she’s now holding her phone a foot-and-a-half from my face, offering a glimpse of the thread but scrolling too quickly for me to actually fix my eyes on a single word.'There’s hearts,' she narrates. Swipe. 'We’ve got Helena Bonham Carter giving us some emojis.' Swipe. 'Mindy Kaling hearting things.' Swipe. I stop her. Was that a photo of Rihanna in her new lingerie? 'Yeah, probably', she says. 'But then there’s also this'. She scrolls back to what looks like a dollar-store ad for nasal spray, moving her screen a cautious few inches closer to my face. I assume it’s a meme (earlier she’d told me Anne Hathaway 'is the meme queen' of the group) but struggle to decipher its meaning. That’s because it’s not, in fact, a meme. 'This is a sinus rinse that we can use if we’re feeling stuffy and puffy,' Paulson explains.",
+    "subject": "Entertainment",
+    "date": "10/23/18"
+    }, {
+    "title": "Dilate",
+    "artist": "Ani DiFranco",
+    "description": "Her highest-selling and most acclaimed album, released in 1996.",
+    "id": "2"
+      }, {
+    "title": "Axis Bold As Love",
+    "artist": "Jimi Hendrix",
+    "description": "Second studio album by the English-American band, released in 1967.",
+    "id": "3"
+  }]
+}
