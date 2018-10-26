@@ -18,14 +18,12 @@ export class ArticleService {
   }
 
   addArticle(newArticle: Article) {
-    
+    this.articles.push(newArticle);
   }
 
-  getArticleById(albumId: number){
-    for (var i =0; i <= ARTICLES.length -1; i++) {
-      if (ARTICLES[i].id === articleId) {
-        return ARTICLES[i];
-      }
-    }
+  updateArticle(localUpdatedArticle) {
+    var articleEntryinFirebase = this.getArticleById(localUpdatedArticle.$key);
+    articleEntryinFirebase.update({title: localUpdatedArticle.title})
   }
+  public sponsored: boolean, public picture: string, public title: string, public description: string, public author: string, public body: string, public subject: string, public date: number
 }
