@@ -1,4 +1,8 @@
-<h2>Large Article Attempt: </h2>
+<div *ngFor='let article of articles' (click)='gotoDetailPage(article)'>
+  <h3>{{article.title}} {{article.author}}</h3>
+</div>
+
+<!-- <h2>Large Article Attempt: </h2>
 
 <app-large-article [childArticleList]="masterArticleList" (clickSender)="editArticle($event)"></app-large-article>
 
@@ -7,4 +11,4 @@
 <app-add-article (sendNewArticle)="addNewArticle($event)"></app-add-article>
 <h2>Edit Form Attempt </h2>
 
-<app-edit-article [childSelectedArticle]="selectedArticle" (clickedDone)="finishedEditing()" ></app-edit-article>
+<app-edit-article [childSelectedArticle]="selectedArticle" (clickedDone)="finishedEditing()" ></app-edit-article> -->

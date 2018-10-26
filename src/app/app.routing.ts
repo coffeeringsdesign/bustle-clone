@@ -2,12 +2,17 @@ import { ModuleWithProviders } from '@angular/core'; // proves our router to the
 import { Routes, RouterModule } from '@angular/router'; // helps render components when specific URLs are provided
 import { AppComponent } from './app.component'; // importing root comp to use as homepage
 import { ArticleMainPageComponent } from './article-main-page/article-main-page.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
 
 // setting up variable as Routes datatype... include all routes here...
 const appRoutes: Routes = [
   {
     path: '',
     component: ArticleMainPageComponent //whichever compo that will be homepage
+  },
+  {
+    path: 'articles/:id',
+    component: ArticleDetailComponent
   }
 ];
 
