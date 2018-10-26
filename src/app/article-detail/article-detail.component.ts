@@ -27,7 +27,7 @@ export class ArticleDetailComponent implements OnInit {
     });
 
     this.articleService.getArticleById(this.articleId).subscribe(dataLastEmittedFromObserver => {
-      this.articleToDisplay = new Article(dataLastEmittedFromObserver.sponsored,
+    this.articleToDisplay = new Article(dataLastEmittedFromObserver.sponsored,
                                           dataLastEmittedFromObserver.picture,
                                           dataLastEmittedFromObserver.title,
                                           dataLastEmittedFromObserver.description,
