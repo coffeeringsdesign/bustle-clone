@@ -5,7 +5,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 // @Injectable()
 
 @Injectable({
-  providedIn: 'app-root'
+  providedIn: 'root'
 })
 
 export class ArticleService {
@@ -35,7 +35,7 @@ export class ArticleService {
                                   date: localUpdatedArticle.date })
   }
 
-  getArticleById(articleId: number) {
+  getArticleById(articleId: string) {
     return this.database.object('article/' + articleId);
   }
 
