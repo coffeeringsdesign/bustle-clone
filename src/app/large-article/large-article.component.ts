@@ -1,17 +1,26 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
 import { Article } from '../models/article.model';
+import { ArticleService } from '../article.service';
+import { Router } from '@angular/router';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 
 @Component({
   selector: 'app-large-article',
   templateUrl: './large-article.component.html',
-  styleUrls: ['./large-article.component.css']
+  styleUrls: ['./large-article.component.css'],
+  providers: [ArticleService]
 })
-export class LargeArticleComponent {
-  @Input() childArticleList: Article[];
-  @Output() clickSender = new EventEmitter();
+export class LargeArticleComponent implements OnInit {
+  articles: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
-  editButtonClicked(articleToEdit: Article) {
-    this.clickSender.emit(articleToEdit);
+  constructor(private articleService: ArticleService, private router: Router) { }
+
+  ngOnInit() {
+    this.articles = this.articleService.getArticles();
+  }
+  goToDetailPage(clickedArticle) {
+    this.router.navigate(['projects', clickedArticle.$key]);
   }
 }

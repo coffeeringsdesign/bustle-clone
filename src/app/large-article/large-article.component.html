@@ -1,9 +1,11 @@
 
 <div *ngFor='let article of articles | async'>
-  <h3 (click)='gotoDetailPage(article)'>{{article.title}} {{article.author}}</h3>
-  <div *ngIf="currentRoute === '/admin'">
+  <a href="{{article.picture}}"></a>
+  <h1 (click)='gotoDetailPage(article)'>{{article.title}}</h1>
+  <h5>{{article.author}}<h5>
+<!-- </div> -->
+  <!-- <div *ngIf="currentRoute === '/admin'">
     <button type="button" name="button">Edit</button>
     <app-edit-article [selectedArticle]="article"></app-edit-article>
     <app-add-article></app-add-article>
-  </div>
-</div>
+  </div> -->
