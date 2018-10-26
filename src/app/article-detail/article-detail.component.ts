@@ -15,9 +15,11 @@ export class ArticleDetailComponent implements OnInit {
   articleId: number;
   articleToDisplay: Article;
 
-  constructor(private articleService: ArticleService,
-              private route: ActivatedRoute,
-              private location: Location) { }
+  constructor(
+    private articleService: ArticleService,
+    private route: ActivatedRoute,
+    private location: Location
+  ) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParametersArray) => {

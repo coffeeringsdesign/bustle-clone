@@ -1,6 +1,5 @@
 import { ModuleWithProviders } from '@angular/core'; // proves our router to the rest of the app
 import { Routes, RouterModule } from '@angular/router'; // helps render components when specific URLs are provided
-import { AppComponent } from './app.component'; // importing root comp to use as homepage
 import { ArticleMainPageComponent } from './article-main-page/article-main-page.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 

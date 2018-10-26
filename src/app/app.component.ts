@@ -9,18 +9,4 @@ import { Article } from './models/article.model';
 
 export class AppComponent {
   title: string = "Bustle";
-  selectedArticle = null;
-
-  finishedEditing() {
-    this.selectedArticle = null;
-  }
-
-  editArticle(clickedArticle) {
-    this.selectedArticle = clickedArticle;
-  }
-
-  addNewArticle(newArticle: Article) {
-    // this.masterArticleList.push(newArticle);
-  }
-
 }

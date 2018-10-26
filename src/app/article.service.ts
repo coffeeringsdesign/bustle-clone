@@ -2,8 +2,10 @@ import { Injectable } from '@angular/core';
 import { Article } from './models/article.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
+// @Injectable()
+
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'app-root'
 })
 
 export class ArticleService {
@@ -23,7 +25,22 @@ export class ArticleService {
 
   updateArticle(localUpdatedArticle) {
     var articleEntryinFirebase = this.getArticleById(localUpdatedArticle.$key);
-    articleEntryinFirebase.update({title: localUpdatedArticle.title})
+    articleEntryinFirebase.update({sponsored: localUpdatedArticle.sponsored,
+                                  picture: localUpdatedArticle.picture,
+                                  title: localUpdatedArticle.title,
+                                  description: localUpdatedArticle.description,
+                                  author: localUpdatedArticle.author,
+                                  body: localUpdatedArticle.body,
+                                  subject: localUpdatedArticle.subject,
+                                  date: localUpdatedArticle.date })
   }
-  public sponsored: boolean, public picture: string, public title: string, public description: string, public author: string, public body: string, public subject: string, public date: number
+
+  getArticleById(articleId: number) {
+    return this.database.object('article/' + articleId);
+  }
+
+  deleteArticle(localArticletoDelete) {
+    var articleEntryinFirebase = this.getArticleById(localArticletoDelete.$key);
+    articleEntryinFirebase.remove();
+  }
 }

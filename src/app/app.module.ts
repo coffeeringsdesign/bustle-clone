@@ -14,7 +14,9 @@ import { routing } from './app.routing';
 import { ArticleMainPageComponent } from './article-main-page/article-main-page.component';
 import { HeaderNavigationComponent } from './header-navigation/header-navigation.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
-import { SlideshowComponent } from './slideshow/slideshow.component'; //add for firebase
+import { SlideshowComponent } from './slideshow/slideshow.component';
+import { HttpModule } from '@angular/http';
+import { AdminComponent } from './admin/admin.component'; //add for firebase
 // import { WelcomeComponent } from './welcome/welcome.component';  if a component other than root is used for homepage import it here
 
 //add for firebase::
@@ -36,11 +38,13 @@ export const firebaseConfig = {
     ArticleMainPageComponent,
     HeaderNavigationComponent,
     ArticleDetailComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     AngularFireModule.initializeApp(firebaseConfig), // add for firebase
     AngularFireDatabaseModule, // add for firebase
     routing // add for routing
