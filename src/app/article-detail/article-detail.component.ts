@@ -1,17 +1,39 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../models/article.model';
-import { }
+import { ArticleService } from '../article.service';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-article-detail',
   templateUrl: './article-detail.component.html',
-  styleUrls: ['./article-detail.component.css']
+  styleUrls: ['./article-detail.component.css'],
+  providers: [ArticleService]
 })
-export class ArticleDetailComponent implements OnInit {
 
-  constructor() { }
+export class ArticleDetailComponent implements OnInit {
+  articleId: number;
+  articleToDisplay: Article;
+
+  constructor(private articleService: ArticleService,
+              private route: ActivatedRoute,
+              private location: Location) { }
 
   ngOnInit() {
+    this.route.params.forEach((urlParametersArray) => {
+      this.articleId = urlParametersArray['id'];
+    });
+
+    this.articleService.getArticleById(this.articleId).subscribe(dataLastEmittedFromObserver => {
+      this.articleToDisplay = new Article(dataLastEmittedFromObserver.sponsored,
+                                          dataLastEmittedFromObserver.picture,
+                                          dataLastEmittedFromObserver.title,
+                                          dataLastEmittedFromObserver.description,
+                                          dataLastEmittedFromObserver.author,
+                                          dataLastEmittedFromObserver.body,
+                                          dataLastEmittedFromObserver.subject,
+                                          dataLastEmittedFromObserver.date)
+    })
   }
 
 }

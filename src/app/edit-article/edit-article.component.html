@@ -1,36 +1,38 @@
-<form *ngIf="childSelectedArticle">
+<form>
+  <h4>Edit Article:</h4>
   <label><input type="checkbox" name="sponsored" value="1">sponsored?</label><br>
 
-  <input [(ngModel)]="childSelectedArticle.title" type="text" name="articleTitle" ><br>
+  <input [(ngModel)]="selectedArticle.title" type="text" name="articleTitle" ><br>
 
-  <input [(ngModel)]="childSelectedArticle.author" type="text" name="author"><br>
+  <input [(ngModel)]="selectedArticle.author" type="text" name="author"><br>
 
-  <textarea [(ngModel)]="childSelectedArticle.description" type="text" name="articleDescription"></textarea><br>
+  <textarea [(ngModel)]="selectedArticle.description" type="text" name="articleDescription"></textarea><br>
 
-  <textarea [(ngModel)]="childSelectedArticle.body" type="text" name="articleBody"></textarea><br>
+  <textarea [(ngModel)]="selectedArticle.body" type="text" name="articleBody"></textarea><br>
 
-  <input [(ngModel)]="childSelectedArticle.picture" type="file" name="Picture"><br>
+  <input [(ngModel)]="selectedArticle.picture" type="file" name="Picture"><br>
 
   <h4>Subjects:</h4>
-  <input [(ngModel)]="childSelectedArticle.subject" type="checkbox" name="News" value="News">News<br>
+  <input [(ngModel)]="selectedArticle.subject" type="checkbox" name="News" value="News">News<br>
 
-  <input [(ngModel)]="childSelectedArticle.subject" type="checkbox" name="Entertainment" value="Entertainment"> Entertainment<br>
+  <input [(ngModel)]="selectedArticle.subject" type="checkbox" name="Entertainment" value="Entertainment"> Entertainment<br>
 
-  <input [(ngModel)]="childSelectedArticle.subject" type="checkbox" name="Beauty" value="Beauty"> Beauty<br>
+  <input [(ngModel)]="selectedArticle.subject" type="checkbox" name="Beauty" value="Beauty"> Beauty<br>
 
-  <input [(ngModel)]="childSelectedArticle.subject" type="checkbox" name="Fashion" value="Fashion"> Fashion<br>
+  <input [(ngModel)]="selectedArticle.subject" type="checkbox" name="Fashion" value="Fashion"> Fashion<br>
 
-  <input [(ngModel)]="childSelectedArticle.subject" type="checkbox" name="Lifestyle" value="Lifestyle">Lifestyle<br>
+  <input [(ngModel)]="selectedArticle.subject" type="checkbox" name="Lifestyle" value="Lifestyle">Lifestyle<br>
 
-  <input [(ngModel)]="childSelectedArticle.subject" type="checkbox" name="Books" value="Books"> Books<br>
+  <input [(ngModel)]="selectedArticle.subject" type="checkbox" name="Books" value="Books"> Books<br>
 
-  <input [(ngModel)]="childSelectedArticle.subject" type="checkbox" name="Tech" value="Tech"> Tech<br>
+  <input [(ngModel)]="selectedArticle.subject" type="checkbox" name="Tech" value="Tech"> Tech<br>
 
-  <input [(ngModel)]="childSelectedArticle.subject" type="checkbox" name="Food" value="Food"> Food<br>
+  <input [(ngModel)]="selectedArticle.subject" type="checkbox" name="Food" value="Food"> Food<br>
 
-  <input [(ngModel)]="childSelectedArticle.subject" type="checkbox" name="Features" value="Features"> Features<br>
+  <input [(ngModel)]="selectedArticle.subject" type="checkbox" name="Features" value="Features"> Features<br>
 
-  <input [(ngModel)]="childSelectedArticle.subject" type="checkbox" name="Video" value="Video"> Video<br>
+  <input [(ngModel)]="selectedArticle.subject" type="checkbox" name="Video" value="Video"> Video<br>
 
-  <button (click)="finishedEditing()">"Submit Edits"</button>
+  <button (click)="beginUpdatingArticle(selectedArticle)">"Submit Edits"</button>
+  <button (click)="beingDeletingArticle(selectedProject" type="button" name="button">Delete Article</button>
 </form>

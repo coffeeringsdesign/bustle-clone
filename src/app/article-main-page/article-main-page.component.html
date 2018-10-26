@@ -1,5 +1,10 @@
-<div *ngFor='let article of articles' (click)='gotoDetailPage(article)'>
-  <h3>{{article.title}} {{article.author}}</h3>
+<button routerLink='admin' type="button" name="button">Admin</button>
+<div *ngFor='let article of articles | async'>
+  <h3 (click)='gotoDetailPage(article)'>{{article.title}} {{article.author}}</h3>
+  <div *ngIf="currentRoute === '/admin'">
+    <button type="button" name="button">Edit</button>
+    <app-edit-article [selectedArticle]="article"></app-edit-article>
+  </div>
 </div>
 
 <!-- <h2>Large Article Attempt: </h2>
