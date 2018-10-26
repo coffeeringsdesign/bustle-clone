@@ -13,7 +13,8 @@ import { AddArticleComponent } from './add-article/add-article.component';
 import { routing } from './app.routing';
 import { ArticleMainPageComponent } from './article-main-page/article-main-page.component';
 import { HeaderNavigationComponent } from './header-navigation/header-navigation.component';
-import { ArticleDetailComponent } from './article-detail/article-detail.component'; //add for firebase
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { SlideshowComponent } from './slideshow/slideshow.component'; //add for firebase
 // import { WelcomeComponent } from './welcome/welcome.component';  if a component other than root is used for homepage import it here
 
 //add for firebase::
@@ -34,7 +35,8 @@ export const firebaseConfig = {
     AddArticleComponent,
     ArticleMainPageComponent,
     HeaderNavigationComponent,
-    ArticleDetailComponent
+    ArticleDetailComponent,
+    SlideshowComponent
   ],
   imports: [
     BrowserModule,
