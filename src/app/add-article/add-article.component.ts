@@ -19,7 +19,7 @@ export class AddArticleComponent implements OnInit {
   // }
 
   constructor(private articleService: ArticleService) { }
-
+  today: string;
   ngOnInit() {
   }
 

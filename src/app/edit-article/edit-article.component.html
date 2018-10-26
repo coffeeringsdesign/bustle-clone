@@ -1,16 +1,17 @@
-<form>
+
   <h4>Edit Article:</h4>
-  <label><input type="checkbox" name="sponsored" value="1">sponsored?</label><br>
-
-  <input [(ngModel)]="selectedArticle.title" type="text" name="articleTitle" ><br>
-
-  <input [(ngModel)]="selectedArticle.author" type="text" name="author"><br>
-
-  <textarea [(ngModel)]="selectedArticle.description" type="text" name="articleDescription"></textarea><br>
-
+  <label>sponsored?</label>
+  <input [(ngModel)]="selectedArticle.sponsored"  type="checkbox" name="sponsored" value="1"><br>
+<label>Title</label>
+  <input [(ngModel)]="selectedArticle.title" type="text" name="title" ><br>
+<label>Author</label>
+  <input [(ngModel)]="selectedArticle.author" name="author"><br>
+<label>Description</label>
+  <textarea [(ngModel)]="selectedArticle.description"></textarea><br>
+<label>Body</label>
   <textarea [(ngModel)]="selectedArticle.body" type="text" name="articleBody"></textarea><br>
-
-  <input [(ngModel)]="selectedArticle.picture" type="file" name="Picture"><br>
+<label>Picture</label>
+  <input [(ngModel)]="selectedArticle.picture" type="text" name="Picture"><br>
 
   <h4>Subjects:</h4>
   <input [(ngModel)]="selectedArticle.subject" type="checkbox" name="News" value="News">News<br>
@@ -35,4 +36,3 @@
 
   <button (click)="beginUpdatingArticle(selectedArticle)">"Submit Edits"</button>
   <button (click)="beginDeletingArticle(selectedArticle)" type="button" name="button">Delete Article</button>
-</form>

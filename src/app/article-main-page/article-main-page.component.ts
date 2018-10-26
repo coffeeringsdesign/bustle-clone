@@ -20,8 +20,9 @@ export class ArticleMainPageComponent implements OnInit {
   ngOnInit() {
     this.articles = this.articleService.getArticles();
   }
-  gotoDetailPage(clickedArticle: Article) {
-    this.router.navigate(['articles', clickedArticle.$key]);
-  }
+
+  // gotoDetailPage(clickedArticle: Article) {
+  //   this.router.navigate(['articles', clickedArticle.$key]);
+  // }
 
 }

@@ -4,9 +4,9 @@
   <h1 (click)='goToDetailPage(article)'>{{article?.title}}</h1>
   <h5>{{article?.author}}</h5>
 
-  <!-- <div *ngIf="currentRoute === '/admin'">
-    <button type="button" name="button">Edit</button>
+  <div *ngIf="currentRoute === '/admin'">
+    <button>Edit</button>
     <app-edit-article [selectedArticle]="article"></app-edit-article>
     <app-add-article></app-add-article>
-  </div> -->
+  </div>
 </div>

@@ -20,6 +20,7 @@ export class LargeArticleComponent implements OnInit {
   ngOnInit() {
     this.articles = this.articleService.getArticles();
   }
+  
   goToDetailPage(clickedArticle) {
     this.router.navigate(['articles', clickedArticle.$key]);
     // console.log(clickedArticle.$key);
