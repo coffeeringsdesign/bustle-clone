@@ -2,6 +2,8 @@ import { ModuleWithProviders } from '@angular/core'; // proves our router to the
 import { Routes, RouterModule } from '@angular/router'; // helps render components when specific URLs are provided
 import { ArticleMainPageComponent } from './article-main-page/article-main-page.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { AdminComponent } from './admin/admin.component';
+
 
 // setting up variable as Routes datatype... include all routes here...
 const appRoutes: Routes = [
@@ -12,6 +14,10 @@ const appRoutes: Routes = [
   {
     path: 'articles/:id',
     component: ArticleDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 

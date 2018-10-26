@@ -2,11 +2,11 @@ import { Injectable } from '@angular/core';
 import { Article } from './models/article.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
-// @Injectable()
+@Injectable()
 
-@Injectable({
-  providedIn: 'root'
-})
+// @Injectable({
+//   providedIn: 'root'
+// })
 
 export class ArticleService {
   articles: FirebaseListObservable<any[]>;

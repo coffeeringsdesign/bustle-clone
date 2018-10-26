@@ -10,6 +10,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
   styleUrls: ['./article-main-page.component.css'],
   providers: [ArticleService]
 })
+
 export class ArticleMainPageComponent implements OnInit {
   articles: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;

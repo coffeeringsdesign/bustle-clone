@@ -1,3 +1,4 @@
+![Kendra Kelly Logo](/kkgithub.png)
 # Bustle Site Clone
 
 #### By Kendra Kelly
