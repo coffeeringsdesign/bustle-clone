@@ -22,5 +22,6 @@ export class LargeArticleComponent implements OnInit {
   }
   goToDetailPage(clickedArticle) {
     this.router.navigate(['articles', clickedArticle.$key]);
+    // console.log(clickedArticle.$key);
   }
 }

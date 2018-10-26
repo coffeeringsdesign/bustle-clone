@@ -35,6 +35,7 @@ export class ArticleDetailComponent implements OnInit {
                                           dataLastEmittedFromObserver.body,
                                           dataLastEmittedFromObserver.subject,
                                           dataLastEmittedFromObserver.date)
+                                          console.log(this.articleToDisplay)
     })
   }
 
