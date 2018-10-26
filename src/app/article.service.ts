@@ -3,17 +3,17 @@ import { Article } from './models/article.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { Observable } from 'rxjs/Rx';
 
-@Injectable()
-
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root'
 })
 
 export class ArticleService {
   articles: FirebaseListObservable<any[]>;
 
+
   constructor(private database: AngularFireDatabase) {
     this.articles = database.list('articles');
+    // console.log(this.articles);  something is getting here
   }
 
   getArticles() {
@@ -37,7 +37,8 @@ export class ArticleService {
   }
 
   getArticleById(articleId: string) {
-    return this.database.object('article/' + articleId);
+    console.log(articleId);
+    return this.database.object('articles/' + articleId);
   }
 
   deleteArticle(localArticletoDelete) {

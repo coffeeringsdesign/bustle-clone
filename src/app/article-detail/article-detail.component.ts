@@ -27,6 +27,7 @@ export class ArticleDetailComponent implements OnInit {
     });
 
     this.articleService.getArticleById(this.articleId).subscribe(dataLastEmittedFromObserver => {
+      // console.log(this.articleId); this.articleId is getting this far
     this.articleToDisplay = new Article(dataLastEmittedFromObserver.sponsored,
                                           dataLastEmittedFromObserver.picture,
                                           dataLastEmittedFromObserver.title,
@@ -35,8 +36,8 @@ export class ArticleDetailComponent implements OnInit {
                                           dataLastEmittedFromObserver.body,
                                           dataLastEmittedFromObserver.subject,
                                           dataLastEmittedFromObserver.date)
-                                          console.log(this.articleToDisplay)
-    })
+                                          // console.log("blah" + this.articleToDisplay.title); not getting this far but this is showing
+    });
   }
 
 }
