@@ -2,15 +2,18 @@
   <h4>Add an Article:</h4>
   <label><input #newSponsored type="checkbox" value="1">sponsored?</label><br>
 
-  Title:<input #newTitle><br>
+  Title: <input #newTitle><br>
 
-  Author:<input #newAuthor><br>
+  Author: <input #newAuthor><br>
 
-  Description:<textarea #newDescription></textarea><br>
+  Description: <textarea #newDescription></textarea><br>
 
-  Article Body:<textarea #newBody></textarea><br>
+  Article Body: <textarea #newBody></textarea><br>
 
-  Picture<input #newPicture type="file"><br>
+  Picture URL: <input #newPicture value="Picture"><br>
+  <!-- <input #newPicture type="file"><br> -->
+
+  Date: <input #newDate value="Date"><br>
 
   <h4>Subjects:</h4>
   <input #newSubject value="News" type="checkbox">News<br>
@@ -33,5 +36,5 @@
 
   <input #newSubject value="Video" type="checkbox"> Video<br>
 
-  <button (click)="submitNewArticleForm(newSponsored.value, newPicture.value, newTitle.value, newDescription.value, newAuthor.value, newBody.value, newSubject.value); addNewArticle.reset()">"Submit Article"</button>
+  <button (click)="submitNewArticleForm(newSponsored.value, newPicture.value, newTitle.value, newDescription.value, newAuthor.value, newBody.value, newSubject.value, newDate.value); addNewArticle.reset()">"Submit Article"</button>
 </form>

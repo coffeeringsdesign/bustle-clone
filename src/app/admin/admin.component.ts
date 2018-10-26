@@ -14,16 +14,4 @@ import { ArticleService } from '../article.service';
 export class AdminComponent {
 
   constructor(private articleService: ArticleService) { }
-
-  // submitForm(
-  //   sponsored: boolean,
-  //   picture: string,
-  //   title: string,
-  //   description: string,
-  //   author: string,
-  //   body: string,
-  //   subject: string,
-  //   date: number) {
-  //     var newArticle: Article = new Article(sponsored, picture, title, description, author, body, subject, date);
-  //   }
 }

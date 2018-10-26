@@ -31,7 +31,7 @@ export class AddArticleComponent implements OnInit {
     author: string,
     body: string,
     subject: string,
-    date: number) {
+    date: string) {
       var newArticle: Article = new Article(sponsored, picture, title, description, author, body, subject, date);
       this.articleService.addArticle(newArticle);
     }
