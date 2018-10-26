@@ -1,6 +1,4 @@
-export class Article {$key: any;
-  $key: any;
-
+export class Article {
   constructor(public sponsored: boolean, public picture: string, public title: string, public description: string, public author: string, public body: string, public subject: string, public date: number) {};
 }
 

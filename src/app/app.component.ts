@@ -8,5 +8,4 @@ import { Article } from './models/article.model';
 })
 
 export class AppComponent {
-  title: string = "Bustle";
 }

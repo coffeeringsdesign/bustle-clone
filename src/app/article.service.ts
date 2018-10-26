@@ -1,19 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Article } from './models/article.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
-import { Observable } from 'rxjs/Rx';
+import { Provider }
+// import { Observable } from 'rxjs/Rx';
 
+// @Injectable()
 @Injectable({
   providedIn: 'root'
 })
-
 export class ArticleService {
   articles: FirebaseListObservable<any[]>;
 
 
   constructor(private database: AngularFireDatabase) {
     this.articles = database.list('articles');
-    // console.log(this.articles);  something is getting here
   }
 
   getArticles() {
@@ -37,7 +37,6 @@ export class ArticleService {
   }
 
   getArticleById(articleId: string) {
-    console.log(articleId);
     return this.database.object('articles/' + articleId);
   }
 
