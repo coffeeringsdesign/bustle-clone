@@ -1,9 +1,8 @@
-<div *ngFor="let article of childArticleList">
-  <img  src={{article.picture}} >
-    <div class="titleBox">
-      <h3>{{article.title}}</h3>
-      <h6>{{article.description}}</h6>
-      <h6>{{article.author}}</h6>
+<div *ngFor='let article of articles | async'>
+  <h3 (click)='gotoDetailPage(article)'>{{article.title}} {{article.author}}</h3>
+  <div *ngIf="currentRoute === '/admin'">
+    <button type="button" name="button">Edit</button>
+    <app-edit-article [selectedArticle]="article"></app-edit-article>
+    <app-add-article></app-add-article>
   </div>
-  <button (click)="editButtonClicked(article)" type="button" name="button">Edit</button>
 </div>

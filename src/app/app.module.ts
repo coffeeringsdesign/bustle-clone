@@ -16,6 +16,7 @@ import { HeaderNavigationComponent } from './header-navigation/header-navigation
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { HttpModule } from '@angular/http';
+// import { RouterModule } from '@angular/router';
 import { AdminComponent } from './admin/admin.component'; //add for firebase
 // import { WelcomeComponent } from './welcome/welcome.component';  if a component other than root is used for homepage import it here
 

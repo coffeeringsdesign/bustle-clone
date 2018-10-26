@@ -12,7 +12,7 @@ import { Location } from '@angular/common';
 })
 
 export class ArticleDetailComponent implements OnInit {
-  articleId: number;
+  articleId: string;
   articleToDisplay: Article;
 
   constructor(

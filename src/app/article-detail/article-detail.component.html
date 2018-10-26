@@ -1,1 +1,9 @@
 <h1>{{articleToDisplay?.title}}</h1><h1>here be dat article</h1>
+<h1>{{articleToDisplay?.author}}</h1>
+<h2>{{articleToDisplay?.description}}</h2>
+<img src="{{articleToDisplay?.picture}}">
+<h6>{{articleToDisplay?.body}}</h6>
+<h6>${{articleToDisplay?.sponsored}}</h6>
+<h6>{{articleToDisplay?.subject}}</h6>
+<h6>Backers: {{articleToDisplay?.date}}</h6>
+constructor(public sponsored: boolean, public picture: string, public title: string, public description: string, public author: string, public body: string, public subject: string, public date: number)
