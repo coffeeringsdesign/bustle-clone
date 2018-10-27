@@ -7,7 +7,7 @@ img {
 }
 
 .largeArticleInfo {
-  top: 20px;
+  /* top: 20px; */
   position: absolute;
   width: 55%;
   display: block;
@@ -15,7 +15,7 @@ img {
   margin-right: auto;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  background-color: blue;
+  background-color: white;
   line-height: 1.5;
   padding: .5em 2em;
 }
