@@ -1,11 +1,11 @@
 
-<div *ngFor='let article of articles | async'>
-  <div class="articlePicture">
-    <img src={{article?.picture}}>
-  </div>
-  <div class="largeArticleInfo">
-    <h2 class="largeArticleTitle"(click)='goToDetailPage(article)'>{{article?.title}}</h2>
-    <h5>BY {{article?.author | uppercase}}</h5>
+<div id="totalArticleContainer" *ngFor='let article of articles | async'>
+  <div class="article">
+    <img src={{this.article?.picture}}>
+    <div class="largeArticleInfo">
+      <h2 class="largeArticleTitle"(click)='goToDetailPage(article)'>{{this.article?.title}}</h2>
+      <h5>BY {{article?.author | uppercase}}</h5>
+    </div>
   </div>
 
   <div *ngIf="currentRoute === '/admin'">
