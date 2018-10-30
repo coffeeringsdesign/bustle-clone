@@ -1,6 +1,57 @@
-img {
-  width: 105px;
+/* * {
+  border: green dotted 2px;
+} */
+
+.topBarContainer {
+  height: 65px;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  border-bottom: 1px solid rgba(50,50,50,.1);
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+.centeredBarContainer {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 820px;
+
+}
+
+.logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+img {
+  width: 105px;
+}
+
+.socialMediaLogos {
+  display: flex;
+}
+
+i {
+  color: grey;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.navigationMenu {
+  cursor: pointer;
+  height: 50px;
+  margin: auto;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 55px;
+  transition: all .3s;
 }
