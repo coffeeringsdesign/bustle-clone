@@ -12,6 +12,21 @@
   right: 0;
   top: 0;
   position: fixed;
+  z-index: 100;
+}
+
+.logoContainer {
+  display: flex;
+  height: 65px;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(50,50,50,.1);
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
   z-index: 999;
 }
 
@@ -20,8 +35,9 @@
   margin-right: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 820px;
-
+  height: 65px;
 }
 
 .logo {
@@ -35,23 +51,17 @@ img {
 }
 
 .socialMediaLogos {
-  display: flex;
+  /* float: right; */
+}
+
+.navigationMenu {
+  /* float: left; */
 }
 
 i {
   color: grey;
-  margin-right: 20px;
+  margin-right: 15px;
   align-items: center;
-}
-
-.navigationMenu {
-  cursor: pointer;
-  height: 50px;
-  margin: auto;
-  padding: 15px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 55px;
-  transition: all .3s;
+  /* height: 40px;
+  width: auto; */
 }
