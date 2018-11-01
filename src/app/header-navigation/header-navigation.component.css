@@ -51,17 +51,24 @@ img {
 }
 
 .socialMediaLogos {
-  /* float: right; */
+  display: flex;
+  /* display: inline-block; */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navigationMenu {
   /* float: left; */
 }
 
-i {
-  color: grey;
+i, p {
+  color: lightgrey;
   margin-right: 15px;
   align-items: center;
   /* height: 40px;
   width: auto; */
+}
+
+.fa-search {
+  color: black;
 }

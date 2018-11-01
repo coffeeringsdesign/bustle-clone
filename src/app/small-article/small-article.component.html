@@ -1,8 +1,14 @@
-<div *ngFor='let article of articles | async'>
-  <h3 (click)='gotoDetailPage(article)'>{{article.title}} {{article.author}}</h3>
+<div id="totalArticleContainer" *ngFor='let article of articles | async'>
+  <div class="article">
+    <img src={{this.article?.picture}}>
+    <div class="largeArticleInfo">
+      <h2 class="largeArticleTitle"(click)='goToDetailPage(article)'>{{this.article?.title}}</h2>
+      <h5>BY {{article?.author | uppercase}}</h5>
+    </div>
+  </div>
+
   <div *ngIf="currentRoute === '/admin'">
-    <button type="button" name="button">Edit</button>
+    <button>Edit</button>
     <app-edit-article [selectedArticle]="article"></app-edit-article>
-    <app-add-article></app-add-article>
   </div>
 </div>

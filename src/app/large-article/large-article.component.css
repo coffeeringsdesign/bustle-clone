@@ -7,6 +7,7 @@ img {
 }
 
 .article{
+ margin-top: 40px;
   display: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -25,7 +26,7 @@ img {
   background-color: white;
   line-height: 1.5;
   padding: .5em 2em;
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 5px 5px 18px lightgrey;
 }
 
 

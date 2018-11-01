@@ -1,0 +1,35 @@
+* {
+  /* border: green 2px dotted; */
+}
+
+img {
+  width: 945px;
+}
+
+.article{
+ margin-top: 40px;
+  display: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 945px;
+}
+
+.largeArticleInfo {
+  bottom: 130px;
+  position: relative;
+  width: 55%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: white;
+  line-height: 1.5;
+  padding: .5em 2em;
+  box-shadow: 5px 5px 18px lightgrey;
+}
+
+
+.largeArticleTitle {
+
+}
